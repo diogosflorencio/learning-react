@@ -1,9 +1,9 @@
-import Header from "./components/Header";
+import Catalog from "./routes/Catalog";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Catalog />
     </div>
   );
 }
