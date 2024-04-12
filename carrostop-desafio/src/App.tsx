@@ -2,7 +2,7 @@ import Catalog from "./routes/Catalog";
 
 function App() {
   return (
-    <div>
+    <div className="catalog-container">
       <Catalog />
     </div>
   );
