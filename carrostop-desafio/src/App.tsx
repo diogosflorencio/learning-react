@@ -1,11 +1,7 @@
 import Catalog from "./routes/Catalog";
 
-function App() {
+export default function App() {
   return (
-    <div className="catalog-container">
-      <Catalog />
-    </div>
+    <Catalog />
   );
 }
-
-export default App;

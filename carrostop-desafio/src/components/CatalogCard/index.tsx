@@ -1,16 +1,16 @@
-import './styles.css';
-import CarImg from '../../assets/car-card 1.png'
+import "./styles.css";
+import CarImg from "../../assets/car-card 1.png";
+import Button from "../Button";
 
 export default function CatalogCard() {
-    return (
-        <>
-            <div>
-                <img src={CarImg} alt="" />
-                <h2>Audi Supra TT</h2>
-                <p>Lorem ipsum dolor sit amet c
-                onsectetur adipisit amet consectetur adipis</p>
-                <button>COMPRAR</button>
-            </div>
-        </>
-    );
+  return (
+    <div className="ct-card">
+      <img src={CarImg} alt="" />
+      <h3>Audi Supra TT</h3>
+      <p>
+        Lorem ipsum dolor sit amet c onsectetur adi adipis
+      </p>
+      <Button />
+    </div>
+  );
 }

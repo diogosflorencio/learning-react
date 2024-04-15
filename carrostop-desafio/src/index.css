@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
-  --color-bg-primary: #FFF;
+  --ct-color-bg-primary: #FFF;
+  --ct-color-bg-secondary: #F78B00;
+  --ct-color-bg-tertiary: #00285F;
+  --ct-color-bg-quaternary: #ededed;
+
+
+
+  --ct-color-font-primary: #000;
+  --ct-color-font-secondary: #585858;
+  --ct-color-font-tertiary: #00285F;
+  --ct-color-font-quaternary: #FFF;
+  --ct-color-font-placeholder: #a7a7a7;
+  
 }
 
 * {
@@ -18,8 +30,10 @@ a:hover {
 
 html,
 body {
-  background-color: var(--color-bg-primary);
+  background-color: var(--ct-color-bg-primary);
 }
-.container-app {
+.ct-container {
+  width: 100%;
   max-width: 979px;
+  margin: 0 auto;
 }
