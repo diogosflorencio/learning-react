@@ -1,14 +1,4 @@
-Entendi, aqui está um novo README para um repositório de aprendizado de React:
-
 # Aprendendo React - Introdução ao React
-
-![GitHub repo size](https://img.shields.io/github/repo-size/yourusername/learning-react?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/yourusername/learning-react?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/learning-react?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/yourusername/learning-react?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/yourusername/learning-react?style=for-the-badge)
-
-<img src="https://placeimg.com/640/480/tech" style="width:50%" alt="Exemplo de imagem">
 
 > Projeto criado para aprender os conceitos básicos do React. Este repositório contém exemplos e exercícios para ajudar no entendimento do React.
 
@@ -24,7 +14,7 @@ Neste repositório, você encontrará exemplos e exercícios que abordam os segu
 
 ## 💻 Pré-requisitos
 
-Antes de começar, é necessário ter o Node.js instalado em sua máquina. Você pode baixá-lo [aqui](https://nodejs.org/).
+Antes de começar, é necessário ter o Node.js, vite, yarn instalado em sua máquina. Você pode baixá-lo [aqui](https://nodejs.org/).
 
 ## 🚀 Iniciando projeto "Aprendendo React"
 
@@ -38,12 +28,12 @@ git clone https://github.com/yourusername/learning-react
 2. Instale as dependências do projeto:
 ```
 cd learning-react
-npm install
+yarn
 ```
 
 3. Execute o projeto:
 ```
-npm start
+yarn dev
 ```
 
 ## 📝 Contribuindo
