@@ -1,8 +1,12 @@
 .dc-container-1 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
     margin-top: 25px;
     color: var(--dc-color-font-tertiary);
+    margin-bottom: 25px;
 }
 
 .dc-container-2 {
