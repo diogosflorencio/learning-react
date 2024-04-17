@@ -6,7 +6,7 @@ export default function ProductDetails(){
     
     return (
         <>
-        <HeaderClient />
+        <HeaderClient name={"DSCommerce"}/>
         <main>
           <section id="product-details-section" className="dsc-container">
             <div className="dsc-card dsc-mb20">
