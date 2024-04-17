@@ -1,7 +1,7 @@
 .dc-container {
   height: 70px;
   width: 100%;
-  background-color: var(--ct-color-bg-primary);
+  background-color: var(--dc-color-bg-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,5 +9,5 @@
 
 .dc-titulo-header {
    font-weight: 700;
-   color: var(--ct-color-font-primary);
+   color: var(--dc-color-font-primary);
 }
