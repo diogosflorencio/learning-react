@@ -2,5 +2,19 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    color: var(--dc-color-bg-secondary);
+    color: var(--dc-color-font-tertiary);
+}
+
+.dc-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+    padding: 25px 0;
+    background-color: var(--dc-color-bg-tertiary);
+}
+
+.dc-container-2 h2 {
+    color: var(--dc-color-font-tertiary);
 }

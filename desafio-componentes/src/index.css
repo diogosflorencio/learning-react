@@ -3,8 +3,13 @@
 :root {
   --dc-color-bg-primary: #3C9AF0;
   --dc-color-bg-secondary: #5E5E5E;
+  --dc-color-bg-tertiary: #C8C8C8;
+  --dc-color-bg-quaternary: #FFFFFF;
 
   --dc-color-font-primary: #FFFFFF;
+  --dc-color-font-secondary: #3C9AF0;
+  --dc-color-font-tertiary: #5E5E5E;
+
 }
 
 * {
