@@ -3,9 +3,9 @@ import "./styles.css";
 export default function Footer() {
   return (
     <>
-      <div className="cd-footer-container">
-        <h3>@dscarrostop</h3>
-        <h3>Rua da Pipoca, 150</h3>
+      <div className="dc-footer-container">
+        <h4>@dscarrostop</h4>
+        <h4>Rua da Pipoca, 150</h4>
       </div>
     </>
   );
