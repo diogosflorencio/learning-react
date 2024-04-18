@@ -1,50 +1,39 @@
-import './styles.css'
+import "./styles.css";
 import HeaderClient from "../../components/HeaderClient";
-import computerImg from '../../assets/computer.png';
+import { ProductDTO } from "../models/product";
+import ProductDetailsCard from "../../components/ButtonNextPage/ProductDetailsCard";
 
-export default function ProductDetails(){
-    
-    return (
-        <>
-        <HeaderClient name={"DSCommerce"}/>
-        <main>
-          <section id="product-details-section" className="dsc-container">
-            <div className="dsc-card dsc-mb20">
-              <div className="dsc-product-details-top dsc-line-bottom">
-                <img src={computerImg} alt="Computador" />
-              </div>
-              <div className="dsc-product-details-bottom">
-                <h3>R$ 5000,00</h3>
-                <h4>Computador Gamer XT</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                  sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <div className="dsc-category-container">
-                  <div className="dsc-category">
-                    Eletrônicos
-                  </div>
-                  <div className="dsc-category">
-                    Computadores
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="dsc-btn-page-container">
-              <div className="dsc-btn dsc-btn-blue">
-                Comprar
-              </div>
-              <div className="dsc-btn dsc-btn-white">
-                Início
-              </div>
-            </div>
-          </section>
-        </main>
-      </>
-    )
+const product: ProductDTO = {
+  id: 2,
+  name: "note",
+  description: "aaaaaaaaaaaaaaaaaaaaa",
+  imgUrl: "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/11-small.jpg",
+  price: 2500.99,
+  categories: [
+    {
+      id: 2,
+      name: "Eletronicos",
+    },
+    {
+      id: 3,
+      name: "Computadores",
+    },
+  ],
+};
+
+export default function ProductDetails() {
+  return (
+    <>
+      <HeaderClient name={"DSCommerce"} />
+      <main>
+        <section id="product-details-section" className="dsc-container">
+          <ProductDetailsCard product={product} />
+          <div className="dsc-btn-page-container">
+            <div className="dsc-btn dsc-btn-blue">Comprar</div>
+            <div className="dsc-btn dsc-btn-white">Início</div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }
