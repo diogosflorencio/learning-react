@@ -23,7 +23,7 @@ export default function ProductDetailsCard({product} : Props) {
 
             {
               product.categories.map(item => {
-                return <ProductCategory name={item.name}/>
+                return <ProductCategory key={item.id} name={item.name}/>
               })
             }
 
