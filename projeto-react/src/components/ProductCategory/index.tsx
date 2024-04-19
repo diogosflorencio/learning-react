@@ -1,11 +1,15 @@
-import './styles.css';
+import "./styles.css";
 
-export default function ProductCategory({name} : Props) {
-    return (
-        <>
-        <div className='pr-productcategory-container'>
-            <h1>{name}</h1>
-        </div>
-        </>
-    )
+type Props = {
+  name: string;
+};
+
+export default function ProductCategory({ name }: Props) {
+  return (
+    <>
+      <div className="pr-productcategory-container">
+        <h1>{name}</h1>
+      </div>
+    </>
+  );
 }
