@@ -1,9 +1,9 @@
 import { ProductDTO } from "../../routes/models/product";
 import ProductCategory from "../ProductCategory";
 
-type Props = {
+type Props ={
     product: ProductDTO;
-}
+} 
 
 
 export default function ProductDetailsCard({product} : Props) {
