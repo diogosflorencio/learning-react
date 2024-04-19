@@ -1,4 +1,5 @@
-import { ProductDTO } from "../../../routes/models/product";
+import { ProductDTO } from "../../routes/models/product";
+import ProductCategory from "../ProductCategory";
 
 type Props = {
     product: ProductDTO;
@@ -19,8 +20,13 @@ export default function ProductDetailsCard({product} : Props) {
             {product.description}
           </p>
           <div className="dsc-category-container">
-            <div className="dsc-category">Eletrônicos</div>
-            <div className="dsc-category">Computadores</div>
+
+            {
+              product.categories.map(item => {
+                return <ProductCategory name={item.name}/>
+              })
+            }
+
           </div>
         </div>
       </div>

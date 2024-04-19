@@ -1,7 +1,7 @@
 import "./styles.css";
 import HeaderClient from "../../components/HeaderClient";
 import { ProductDTO } from "../models/product";
-import ProductDetailsCard from "../../components/ButtonNextPage/ProductDetailsCard";
+import ProductDetailsCard from "../../components/ProductDetailsCard";
 
 const product: ProductDTO = {
   id: 2,
