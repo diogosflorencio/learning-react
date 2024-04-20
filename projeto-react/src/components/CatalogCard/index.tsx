@@ -1,7 +1,12 @@
 import ComputerImg from '../../assets/computer.png';
+import { productCatalogDTO } from '../../routes/models/productCatalog';
 import './styles.css';
 
-export default function CatalogCard() {
+type Props = {
+  item: productCatalogDTO;
+}
+
+export default function CatalogCard({item}: Props) {
   return (
     <>
       <div className="dsc-card">
@@ -9,8 +14,8 @@ export default function CatalogCard() {
           <img src={ComputerImg} alt="Computer" />
         </div>
         <div className="dsc-catalog-card-bottom">
-          <h3>R$ 5000,00</h3>
-          <h4>Computador Gamer XT</h4>
+          <h3>{item.price}</h3>
+          <h4>{item.name}</h4>
         </div>
       </div>
     </>
