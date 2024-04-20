@@ -6,6 +6,7 @@ import ButtonNextPage from "../../components/ButtonNextPage";
 import { productCatalogDTO } from "../models/productCatalog";
 
 const item: productCatalogDTO = {
+  id: 1,
   itens: [
     {
       name: 'computador',
@@ -47,7 +48,7 @@ export default function Catalog() {
           <div className="dsc-catalog-cards dsc-mb20 dsc-mt20">
           {
             item.itens.map( i => {
-              return  <CatalogCard item={i} />
+              return  <CatalogCard key={item.id}  item={i} />
             })
           }
        
