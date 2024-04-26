@@ -34,3 +34,4 @@ const invoices = [
 export function getInvoices() {
   return invoices;
 }
+
