@@ -7,12 +7,14 @@ import Invoices from "./routes/Invoices/index.tsx";
 import NotFound from "./routes/NotFound/index.tsx";
 import Invoice from "./routes/Invoices/Invoice/index.tsx";
 import InvoicesIndex from "./routes/Invoices/InvoicesIndex/index.tsx";
+import Message from "./routes/Message/index.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route index element={<Message />} />
           <Route path="expenses" element={<Expenses />} />
           <Route path="invoices" element={<Invoices />}>
             <Route index element={<InvoicesIndex />} />
