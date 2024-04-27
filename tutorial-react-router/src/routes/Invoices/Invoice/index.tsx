@@ -3,7 +3,7 @@ import { getInvoice } from "../../../data";
 
 export default function Invoice() {
   const params = useParams();
-  const invoice = getInvoice(parseInt(params.invoiceId, 10));
+  const invoice = getInvoice(Number(params.invoiceId));
   return (
     <>
       {invoice && (
