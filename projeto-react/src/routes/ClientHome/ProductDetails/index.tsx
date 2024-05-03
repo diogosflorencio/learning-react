@@ -1,9 +1,9 @@
 import "./styles.css";
-import HeaderClient from "../../components/HeaderClient";
-import { ProductDTO } from "../models/product";
-import ProductDetailsCard from "../../components/ProductDetailsCard";
-import Button from "../../components/Button";
-import ButtonInvertido from "../../components/ButtonInvertido";
+import HeaderClient from "../../../components/HeaderClient";
+import { ProductDTO } from "../../models/product";
+import ProductDetailsCard from "../../../components/ProductDetailsCard";
+import Button from "../../../components/Button";
+import ButtonInvertido from "../../../components/ButtonInvertido";
 
 const product: ProductDTO = {
   id: 2,

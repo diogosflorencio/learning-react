@@ -1,9 +1,9 @@
-import HeaderClient from "../../components/HeaderClient";
-import SearchBar from "../../components/SearchBar";
-import CatalogCard from "../../components/CatalogCard";
+import HeaderClient from "../../../components/HeaderClient";
+import SearchBar from "../../../components/SearchBar";
+import CatalogCard from "../../../components/CatalogCard";
 import "./styles.css";
-import ButtonNextPage from "../../components/ButtonNextPage";
-import { productCatalogDTO } from "../models/productCatalog";
+import ButtonNextPage from "../../../components/ButtonNextPage";
+import { productCatalogDTO } from "../../models/productCatalog";
 
 const item: productCatalogDTO = {
   id: 1,
@@ -40,7 +40,6 @@ const item: productCatalogDTO = {
 export default function Catalog() {
   return (
     <>
-      <HeaderClient name="DSCommerce" />
       <main>
         <section id="catalog-section" className="dsc-container">
           <SearchBar />
