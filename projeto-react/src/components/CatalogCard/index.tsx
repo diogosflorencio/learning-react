@@ -3,10 +3,10 @@ import { productCatalogDTO } from '../../routes/models/productCatalog';
 import './styles.css';
 
 type Props = {
-  item: productCatalogDTO;
+  product: productCatalogDTO;
 }
 
-export default function CatalogCard({item}: Props) {
+export default function CatalogCard({product}: Props) {
   return (
     <>
       <div className="dsc-card">
@@ -14,8 +14,8 @@ export default function CatalogCard({item}: Props) {
           <img src={ComputerImg} alt="Computer" />
         </div>
         <div className="dsc-catalog-card-bottom">
-          <h3>{item.price}</h3>
-          <h4>{item.name}</h4>
+          <h3>{product.price}</h3>
+          <h4>{product.name}</h4>
         </div>
       </div>
     </>
