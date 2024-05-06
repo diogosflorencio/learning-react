@@ -1,43 +1,23 @@
 import "./styles.css";
 import HeaderClient from "../../../components/HeaderClient";
-import { ProductDTO } from "../../models/product";
 import ProductDetailsCard from "../../../components/ProductDetailsCard";
 import Button from "../../../components/Button";
 import ButtonInvertido from "../../../components/ButtonInvertido";
-
-const product: ProductDTO = {
-  id: 2,
-  name: "note",
-  description: "aaaaaaaaaaaaaaaaaaaaa",
-  imgUrl: "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/11-small.jpg",
-  price: 2500.99,
-  categories: [
-    {
-      id: 2,
-      name: "Eletronicos",
-    },
-    {
-      id: 3,
-      name: "Computadores",
-    },
-    {
-      id: 3,
-      name: "Computadores",
-    },
-    {
-      id: 3,
-      name: "Computadores",
-    },
-  ],
-};
+import * as productService from "../../../services/product-service";
+import { useParams } from "react-router-dom";
 
 export default function ProductDetails() {
+
+  const params = useParams();
+  const product = productService.findById(Number(params.productId))
   return (
     <>
-      <HeaderClient name={"DSCommerce"} />
       <main>
         <section id="product-details-section" className="dsc-container">
-          <ProductDetailsCard product={product} />
+          {
+            product &&
+            <ProductDetailsCard product={product}/>
+          }
           <div className="dsc-btn-page-container">
             
             <Button name={'Comprar'}/>
