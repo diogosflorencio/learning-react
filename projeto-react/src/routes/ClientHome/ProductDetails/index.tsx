@@ -1,10 +1,10 @@
 import "./styles.css";
-import HeaderClient from "../../../components/HeaderClient";
 import ProductDetailsCard from "../../../components/ProductDetailsCard";
 import Button from "../../../components/Button";
 import ButtonInvertido from "../../../components/ButtonInvertido";
 import * as productService from "../../../services/product-service";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ProductDetails() {
 
@@ -21,7 +21,9 @@ export default function ProductDetails() {
           <div className="dsc-btn-page-container">
             
             <Button name={'Comprar'}/>
-            <ButtonInvertido name={'Início'}/>
+            <Link to="/">
+              <ButtonInvertido name={'Início'}/>
+            </Link>
           </div>
         </section>
       </main>
