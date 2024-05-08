@@ -1,5 +1,5 @@
 //import ProductDetails from './routes/ProductDetails';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Catalog from "./routes/ClientHome/Catalog";
 import ProductDetails from "./routes/ClientHome/ProductDetails";
 import ClientHome from "./routes/ClientHome";
@@ -13,6 +13,7 @@ function App() {
           <Route path="/" element={<Catalog/>}/>
           <Route path="product-details/:productId" element={<ProductDetails/>}/>
         </Route>
+          <Route path="*" element={<Navigate to={"/"}/>}/>
       </Routes>
     </BrowserRouter>
   );
