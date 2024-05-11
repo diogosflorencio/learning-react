@@ -1,0 +1,23 @@
+:root {
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #ff2323;
+    --color-bg-tertiary: #dadada;
+
+    --color-font-primary: #6f6f6f;
+    --color-font-secondary: #fff;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
