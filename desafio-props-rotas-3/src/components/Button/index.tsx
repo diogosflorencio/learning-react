@@ -1,14 +1,9 @@
 import "./styles.css";
 
 type Props = {
-    text: string;
-}
+  text: string;
+};
 
-export default function Button({text} : Props) {
-
-    return (
-        <div className="button">
-            {text}
-        </div>
-    )
+export default function Button({ text }: Props) {
+  return <div className="button">{text}</div>;
 }
