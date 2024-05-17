@@ -3,7 +3,7 @@ import iconeCasa from "../../assets/image.png";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function SubHeader() {
   return (
     <header>
       <div className="container-container">
