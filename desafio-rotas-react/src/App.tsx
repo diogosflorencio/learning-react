@@ -14,7 +14,7 @@ export default function App() {
           <Route index element={<HomeBody />}/>
           <Route path="home" element={<HomeBody />}/>
           <Route path="produtos" element={<Products />}>
-            <Route index element={<SubHeader/>}/>
+            <Route path=":compt" element={<SubHeader/>}/>
           </Route>
           <Route path="sobre" element={<About />} />
           <Route path="*" element={<NotFound/>} />
