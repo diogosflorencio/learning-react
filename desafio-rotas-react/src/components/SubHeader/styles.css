@@ -1,19 +1,22 @@
-.container-container {
+.container-container-sub {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 80px;
-    background-color: var(--color-bg-primary);
-    color: var(--color-font-primary)
+    background-color: rgba(131, 131, 131, 0.842);
+  
+    margin: 20px;
 }
 .container {
     display: flex;
+    
 }
 
-.item {
+.item-sub {
     margin-left: 10px;
     text-decoration: none;
     color: var(--color-font-primary);
+    color:black;
 }
 header {
  header {

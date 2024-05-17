@@ -1,35 +1,35 @@
 import "./styles.css";
-import iconeCasa from "../../assets/image.png";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
-
 export default function SubHeader() {
   return (
     <header>
-      <div className="container-container">
+      <div className="container-container-sub">
         <nav className="container">
           <NavLink
-            to="/home"
-            className={({ isActive }) => (isActive ? "ativo item " : "item")}
+            to="/produtos/compt"
+            className={({ isActive }) =>
+              isActive ? "ativo item-sub " : "item-sub"
+            }
           >
-            Inicio
+            Computador
           </NavLink>
           <NavLink
-            to="/produtos"
-            className={({ isActive }) => (isActive ? "ativo item " : "item")}
+            to="/produtos/eletro"
+            className={({ isActive }) =>
+              isActive ? "ativo item-sub " : "item-sub"
+            }
           >
-            Produtos
+            Eletronicos
           </NavLink>
           <NavLink
-            to="/sobre"
-            className={({ isActive }) => (isActive ? "ativo item " : "item")}
+            to="/produtos/livros"
+            className={({ isActive }) =>
+              isActive ? "ativo item-sub " : "item-sub"
+            }
           >
-            Sobre nós
+            Livros
           </NavLink>
         </nav>
-        <div className="container-image">
-          <Link to="/"><img className="icone-casa" src={iconeCasa} alt="botão home" /></Link>
-        </div>
       </div>
     </header>
   );
