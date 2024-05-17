@@ -1,0 +1,19 @@
+.container-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: var(--color-bg-primary);
+    color: var(--color-font-primary)
+}
+.container {
+    display: flex;
+}
+
+.item {
+    margin-left: 10px;
+}
+.icone-casa {
+    width: 20px;
+    filter: invert();
+}
