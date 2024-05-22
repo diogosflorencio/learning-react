@@ -1,17 +1,22 @@
+import { useEffect, useState } from "react";
 import { findProduct } from "./data";
 
 function App() {
 
   console.log("passou no app")
-  // forma errada
-  let productId = 1;
-  
-  let prod = findProduct(productId)
+
+  const [productId, setProductId] = useState(2)
+  const [prod, setProd] = useState<any>();
+
+  useEffect(() => {
+    console.log("passou no app useef")
+    setProd(findProduct(productId))
+  }, [])
   
   function handleClick(){
-    console.log("passou no app")
-    productId = 2;
-    prod = findProduct(productId)
+    console.log("passou no app hand")
+    // setProductId(2)
+    // setProd(findProduct(productId))
   }
   return (
     <>
