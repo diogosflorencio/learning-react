@@ -5,17 +5,17 @@ function App() {
 
   console.log("passou no app")
 
-  const [productId, setProductId] = useState(2)
+  const [productId, setProductId] = useState(1)
   const [prod, setProd] = useState<any>();
 
   useEffect(() => {
     console.log("passou no app useef")
     setProd(findProduct(productId))
-  }, [])
+  }, [productId])
   
   function handleClick(){
     console.log("passou no app hand")
-    // setProductId(2)
+    setProductId(2)
     // setProd(findProduct(productId))
   }
   return (
