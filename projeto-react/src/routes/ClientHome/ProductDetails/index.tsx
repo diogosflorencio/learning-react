@@ -5,11 +5,21 @@ import ButtonInvertido from "../../../components/ButtonInvertido";
 import * as productService from "../../../services/product-service";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { ProductDTO } from "../../models/product";
 
 export default function ProductDetails() {
 
   const params = useParams();
-  const product = productService.findById(Number(params.productId))
+
+  const [product, setProduct] = useState<ProductDTO>();
+
+  useEffect(() => {
+    const prod = productService.findById(Number(params.productId))
+    setProduct(prod)
+  }, [])
+
+  // 
   return (
     <>
       <main>
