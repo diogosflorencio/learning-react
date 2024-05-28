@@ -7,7 +7,6 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ProductDTO } from "../../models/product";
-import axios from "axios";
 
 export default function ProductDetails() {
 

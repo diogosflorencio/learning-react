@@ -1,12 +1,12 @@
 import axios from "axios";
-import { ProductDTO } from "../routes/models/product";
+import { BASE_URL } from "../utils/system";
 
 export function findAll() {
-    return axios.get("http://localhost:8080/products?size=12")
+    return axios.get(`${BASE_URL}/products?size=12`)
 
 }
 
 export function findById(id: number) {
-    return axios.get(`http://localhost:8080/products/${id}`)
+    return axios.get(`${BASE_URL}/products?size=12/products/${id}`)
 }
 
