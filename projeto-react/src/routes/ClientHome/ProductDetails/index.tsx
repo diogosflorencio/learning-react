@@ -9,33 +9,26 @@ import { useEffect, useState } from "react";
 import { ProductDTO } from "../../models/product";
 
 export default function ProductDetails() {
-
   const params = useParams();
 
   const [product, setProduct] = useState<ProductDTO>();
 
   useEffect(() => {
-    productService.findById(Number(params.productId))
-    .then(response => {
-      console.log(response.data)
-      setProduct(response.data)
-    })
-  }, [])
+    productService.findById(Number(params.productId)).then((response) => {
+      console.log(response.data);
+      setProduct(response.data);
+    });
+  }, []);
 
-  
   return (
     <>
       <main>
         <section id="product-details-section" className="dsc-container">
-          {
-            product &&
-            <ProductDetailsCard product={product}/>
-          }
+          {product && <ProductDetailsCard product={product} />}
           <div className="dsc-btn-page-container">
-            
-            <Button name={'Comprar'}/>
+            <Button name={"Comprar"} />
             <Link to="/">
-              <ButtonInvertido name={'Início'}/>
+              <ButtonInvertido name={"Início"} />
             </Link>
           </div>
         </section>
