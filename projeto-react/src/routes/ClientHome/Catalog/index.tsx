@@ -21,9 +21,10 @@ export default function Catalog() {
           <SearchBar />
 
           <div className="dsc-catalog-cards dsc-mb20 dsc-mt20">
-            {products.map((product) => (
-              <CatalogCard key={product.id} productParam={product} />
-            ))}
+            {products.map(
+              product => <CatalogCard key={product.id} productParam={product} />
+              
+            )}
           </div>
           <ButtonNextPage />
         </section>

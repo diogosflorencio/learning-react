@@ -7,6 +7,6 @@ export function findAll() {
 }
 
 export function findById(id: number) {
-    return axios.get(`${BASE_URL}products?size=12/products/${id}`)
+    return axios.get(`${BASE_URL}products/${id}`)
 }
 
