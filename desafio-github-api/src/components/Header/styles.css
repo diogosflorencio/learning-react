@@ -1,0 +1,10 @@
+.container {
+    background-color: #1890FF;
+    height: 62px;
+    display: flex;
+    align-items: center;
+}
+h2 {
+    color: white;
+    padding: 41px;
+}
