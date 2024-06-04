@@ -1,0 +1,17 @@
+.container-form {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+p {
+    opacity: 70%;
+    margin: 15px 0 15px 0;
+}
+button {
+    background-color: #1890FF;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}

@@ -1,7 +1,7 @@
 
 import "./styles.css"
 
-export default function Home() {
+export default function Inicio() {
     return (
         <>
          <div className="container-home">
