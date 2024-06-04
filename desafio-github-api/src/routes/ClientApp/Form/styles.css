@@ -1,12 +1,17 @@
 .container-form {
     padding: 20px;
+    background-color: #188fff28;
+    margin: 50px 20px;
+    border-radius: 10px;
+    
+    
 }
 
 h1 {
     font-size: 32px;
 }
-p {
-    opacity: 70%;
+input {
+    display: block;
     margin: 15px 0 15px 0;
 }
 button {
