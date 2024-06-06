@@ -7,7 +7,7 @@ export default function Form() {
          <div className="container-form">
             <h1>Encontre um perfil Github</h1>
             <input type="text" />
-            <button>buscar</button>
+            <button>Encontrar</button>
          </div>
          <Outlet />
         </>
