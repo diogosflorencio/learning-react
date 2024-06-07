@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import ClientApp from "./routes/ClientApp";
 import Form from "./routes/ClientApp/Form";
@@ -11,10 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ClientApp />}>
-          <Route index element={<Inicio/>}/>
+          <Route index element={<Inicio />} />
           <Route path="encontrar" element={<Form />}>
-            <Route path="erro" element={<RespostaErro/>}/>
-            <Route path="resposta" element={<Resposta/>}/>
+            <Route path="erro" element={<RespostaErro />} />
+            <Route path="resposta" element={<Resposta />} />
           </Route>
         </Route>
       </Routes>

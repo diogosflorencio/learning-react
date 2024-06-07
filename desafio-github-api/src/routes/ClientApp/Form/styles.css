@@ -1,27 +1,26 @@
 .container-form {
-    padding: 20px;
-    background-color: #188fff28;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    
+  padding: 20px;
+  background-color: #188fff28;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
-.container-resultado{
-    margin: 50px 20px;
+.container-resultado {
+  margin: 50px 20px;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 input {
-    display: block;
-    margin: 15px 0 15px 0;
-    height: 30px;
-    width: 250px;
+  display: block;
+  margin: 15px 0 15px 0;
+  height: 30px;
+  width: 250px;
 }
 button {
-    color: white;
-    background-color: #1890FF;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+  color: white;
+  background-color: #1890ff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
