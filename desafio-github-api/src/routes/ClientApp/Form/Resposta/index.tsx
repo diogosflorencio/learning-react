@@ -3,7 +3,18 @@ import "./styles.css"
 export default function Resposta() {
   return (
     <>
-      <h1>Erro ao buscar usuário</h1>
+      <div className="container">
+        <div className="imagem-container">
+
+        </div>
+        <div className="info">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+      </div>
     </>
   );
 }
