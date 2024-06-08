@@ -15,7 +15,7 @@ function App() {
             <Route path="erro" element={<RespostaErro />} />
             <Route path="resposta" element={<Resposta />} />
           </Route>
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </BrowserRouter>
