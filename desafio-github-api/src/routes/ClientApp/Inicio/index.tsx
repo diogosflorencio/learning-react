@@ -8,7 +8,9 @@ export default function Inicio() {
       <div className="container-home">
         <h1>Desafio Github API</h1>
         <p>DevSuperior - Escola de programação</p>
-        <Link to="/encontrar"> <button>Começar</button></Link>
+        <Link to="/encontrar">
+          <button>Começar</button>
+        </Link>
       </div>
     </>
   );
