@@ -15,6 +15,7 @@ export default function Catalog() {
       setProducts(response.data.content);
     });
   }, []);
+  
   return (
     <>
       <main>
