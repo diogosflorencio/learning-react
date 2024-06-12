@@ -10,16 +10,7 @@ import { CategoryDTO } from "../../models/category";
 export default function Catalog() {
   const [products, setProducts] = useState<ProductDTO[]>([]);
 
-  const objTest : CategoryDTO = {
-    id: 8,
-    name: "jardinagem"
-  }
-
   useEffect(() => {
-    // localStorage.setItem("minhaCategoria", JSON.stringify(objTest))
-    const obj = JSON.parse(localStorage.getItem("minhaCategoria") || "")
-    console.log(obj.name)
-
     productService.findAll().then((response) => {
       setProducts(response.data.content);
     });
@@ -31,10 +22,9 @@ export default function Catalog() {
           <SearchBar />
 
           <div className="dsc-catalog-cards dsc-mb20 dsc-mt20">
-            {products.map(
-              product => <CatalogCard key={product.id} productParam={product} />
-              
-            )}
+            {products.map((product) => (
+              <CatalogCard key={product.id} productParam={product} />
+            ))}
           </div>
           <ButtonNextPage />
         </section>
