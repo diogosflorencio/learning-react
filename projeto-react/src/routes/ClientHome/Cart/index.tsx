@@ -1,5 +1,6 @@
 import "./styles.css";
 import computerImg from "../../../assets/computer.png";
+import { useEffect } from "react";
 
 const cart = {
   items: [
@@ -23,6 +24,10 @@ const cart = {
 };
 
 export default function Card() {
+
+  useEffect(() => {
+    localStorage.setItem("com.diogo.dscommerce/Cart", JSON.stringify(cart))
+  }, [])
   return (
     <main>
       <section id="cart-container-section" className="dsc-container">
