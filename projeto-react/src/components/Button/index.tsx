@@ -4,8 +4,8 @@ type Props = {
     name: string;
 }
 
-export default function Button({ name } : Props){
-    return(
+export default function Button({ name }: Props) {
+    return (
         <div className="dsc-btn dsc-btn-blue">{name}</div>
     );
 }
