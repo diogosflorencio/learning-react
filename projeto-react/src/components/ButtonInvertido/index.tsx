@@ -6,6 +6,6 @@ type Props = {
 
 export default function ButtonInvertido ({name} : Props) {
     return (
-        <div className="dsc-btn dsc-btn-white">{name}</div>
+            <div className="dsc-btn dsc-btn-white">{name}</div>
     );
 }
