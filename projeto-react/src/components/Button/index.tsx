@@ -1,7 +1,7 @@
 import './styles.css';
 
 type Props = {
-    name: string; 
+    name: string;
 }
 export default function Button({ name }: Props) {
     return (
